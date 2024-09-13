@@ -28,7 +28,7 @@ global.xchannel = {
 	}
 
 //bot sett
-global.typemenu = 'v12' // menu type 'v1' => 'v12'
+global.typemenu = 'v12' // menu type 'v1' => 'v10'
 global.typereply = 'v4' // reply type 'v1' => 'v4'
 global.autoblocknumber = '255' //set autoblock country code
 global.antiforeignnumber = '1' //set anti foreign number country code
