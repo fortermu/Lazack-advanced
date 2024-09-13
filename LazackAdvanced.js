@@ -207,12 +207,12 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 			if (typeof group !== 'object') global.db.groups[m.chat] = {}
 			if (group) {
 				if (!('ntnsfw' in group)) group.ntnsfw = false
-				  if (!('welcome' in group)) group.welcome = false
+				  if (!('welcome' in group)) group.welcome = true
                   if (!('setinfo' in group)) group.setinfo = false
 				  if (!('badword' in group)) group.badword = false
                   if (!('antiforeignnum' in group)) group.antiforeignnum = false
                   if (!('antibot' in group)) group.antibot = false
-                  if (!('antiviewonce' in group)) group.antiviewonce = false
+                  if (!('antiviewonce' in group)) group.antiviewonce = true
                   if (!('antispam' in group)) group.antispam = false
                   if (!('antimedia' in group)) group.media = false
                   if (!('antivirtex' in group)) group.antivirtex = false
@@ -226,16 +226,16 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
                   if (!('antidocument' in group)) group.antidocument = false
                   if (!('antilink' in group)) group.antilink = false
                   if (!('antipromotion' in group)) group.antipromotion = false
-                  if (!('antidelete' in group)) group.antidelete = false
+                  if (!('antidelete' in group)) group.antidelete = true
 			} else {
 				global.db.groups[m.chat] = {
 				  ntsfw: false,
-				  welcome: false,
+				  welcome: true,
 				  setinfo: false,
 				  badword: false,
                   antiforeignnum: false,
                   antibot: false,
-                  antiviewonce: false,
+                  antiviewonce: true,
                   antispam: false,
                   antivirtex: false,
                   antimedia: false,
@@ -1729,7 +1729,7 @@ break
 			case 'repo': case 'repository': {
   try {
     const [, username, repoName] = botscript.match(/github\.com\/([^/]+)\/([^/]+)/)
-    const response = await axios.get(`https://api.github.com/repos/Lazack28/Lazack-advanced`)
+    const response = await axios.get(`https://api.github.com/repos/fortermu/Lazack-advanced`)
     if (response.status === 200) {
       const repoData = response.data
       const formattedInfo = `
@@ -16783,34 +16783,38 @@ break
 			break
 			
 			// Menu
-		    case 'menu': case 'help': case 'alive': {
+		    case 'menu': case 'malik': case 'alive': {
             const timestampe = speed()
             const latensie = speed() - timestampe
             const a = db.users[sender]
             const me = m.sender
 			const xmenu_oh = `
-╭─┴⎆「 *MENU* 」⎆
-│${setv} ${prefix}allmenu
-│${setv} ${prefix}searchmenu
-│${setv} ${prefix}downloadmenu
-│${setv} ${prefix}gamemenu
-│${setv} ${prefix}funmenu
-│${setv} ${prefix}aimenu
-│${setv} ${prefix}groupmenu
-│${setv} ${prefix}ownermenu
-│${setv} ${prefix}convertmenu
-│${setv} ${prefix}listmenu
-│${setv} ${prefix}religionmenu
-│${setv} ${prefix}animemenu
-│${setv} ${prefix}nsfwmenu
-│${setv} ${prefix}randomphotomenu
-│${setv} ${prefix}randomvideomenu
-│${setv} ${prefix}stickermenu
-│${setv} ${prefix}databasemenu
-│${setv} ${prefix}storemenu
-│${setv} ${prefix}stalkermenu
-│${setv} ${prefix}bugmenu
-│${setv} ${prefix}othermenu
+╭─┴⎆「 *MALIK-MD* 」⎆
+> ${setv} ${prefix}allmenu
+> ${setv} ${prefix}searchmenu
+> ${setv} ${prefix}downloadmenu
+> ${setv} ${prefix}gamemenu
+> ${setv} ${prefix}funmenu
+> ${setv} ${prefix}aimenu
+> ${setv} ${prefix}groupmenu
+> ${setv} ${prefix}ownermenu
+> ${setv} ${prefix}convertmenu
+> ${setv} ${prefix}listmenu
+> ${setv} ${prefix}religionmenu
+> ${setv} ${prefix}animemenu
+> ${setv} ${prefix}nsfwmenu
+> ${setv} ${prefix}randomphotomenu
+> ${setv} ${prefix}randomvideomenu
+> ${setv} ${prefix}stickermenu
+> ${setv} ${prefix}databasemenu
+> ${setv} ${prefix}storemenu
+> ${setv} ${prefix}stalkermenu
+> ${setv} ${prefix}bugmenu
+> ${setv} ${prefix}othermenu
+> NEED YOUR OWN BOT??? 
+> JOIN MY CHENNAL
+> https://whatsapp.com/channel/0029VajGrB30VycDLLwMn30x
+> _MALIK MEHTAB_
 ╰──────⎆`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
@@ -17009,11 +17013,19 @@ let msg = generateWAMessageFromContent(m.chat, {
                   buttons: [
              {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@lazaromtaju?si=u8DlsnWfkqAPondy\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@problem_solved.?si=sHsFidISroYnJoZC\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+			  {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"Instagram\",\"url\":\"https://instagram.com/@cracka2.o\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+			  {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp Comunity\",\"url\":\"https://chat.whatsapp.com/GBNZx9uWvlDAwZrBMPKlTt\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp Chennal📱\",\"url\":\"https://whatsapp.com/channel/0029VajGrB30VycDLLwMn30x\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
                 }),
@@ -17185,6 +17197,7 @@ break
 case 'allmenu': {
 let xmenu_oh = `
 ╭─┴⎆「 *OWNER MENU* 」⎆
+> _*Malik Mehtab Md Bot*_
 │${setv} ${prefix}addbadword 🅞
 │${setv} ${prefix}delbadword 🅞
 │${setv} ${prefix}autoread 🅞
