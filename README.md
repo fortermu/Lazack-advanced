@@ -10,11 +10,11 @@
 <p align="center">  
 
 <p align="center">
-  <a href="https://chat.whatsapp.com/ICNOZzsDH9E81j3RlqLx4w">
+  <a href="https://whatsapp.com/channel/0029VajGrB30VycDLLwMn30x">
     <img alt=Support height="250" src="https://telegra.ph/file/1dc10a39146c80069a439.jpg"> 
     </p>
 
-****[FORK THIS REPO](https://github.com/Lazack28/Lazack-advanced/fork)****
+****[FORK THIS REPO](https://github.com/fortermu/Lazack-advanced/fork)****
 
 ***[GROUP](https://chat.whatsapp.com/IIpL6gf6dcq4ial8gaJLE9)***
 
